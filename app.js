@@ -15,9 +15,6 @@ dbConnect();
 
 // parsing the incoming data
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static('public'));
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
