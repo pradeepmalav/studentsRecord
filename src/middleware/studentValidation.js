@@ -7,7 +7,6 @@ export const checkValidStudent = async(req,res,next)=>{
     
        if(student_id){
         const data = await StudentModel.find({_id:student_id});
-        console.log("Validator", data)
         if(!!Object.keys(data).length){
             next();
         }
